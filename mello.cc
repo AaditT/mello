@@ -84,7 +84,7 @@ void mello_gen(int count, char *key)
         notes.push_back(note_with_accidental);
     }
     std::string cmd = "";
-    cmd += "play ";
+    cmd += "afplay ";
     for (auto it = notes.begin(); it != notes.end(); it++) {
         if (*it == "A")
             cmd += " WAV/A.wav ";
