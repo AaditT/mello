@@ -1,5 +1,6 @@
 # notes to emotion dictionary
 # source: https://ledgernote.com/blog/lessons/musical-key-characteristics-emotions/
+# Created by Aadit Trivedi
 
 key_to_emotion = {
     'C Major': ['pure','happy','imaginative','earnest','simplicity'],
