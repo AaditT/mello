@@ -3,6 +3,7 @@
 
 //still needs to configure specific notes
 
+int speakerPin = 8;
 void setup () {
   pinMode (speakerPin, OUTPUT);
 }
