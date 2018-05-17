@@ -1,3 +1,5 @@
+/* Computer improvisation algorithms for Mello - Written by Srihari Nanniyur. */
+
 #include <iostream>
 #include <stdexcept>
 #include <algorithm>
