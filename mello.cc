@@ -1,4 +1,4 @@
-/* Test file for algos.c - Written by Srihari nanniyur */
+/* Test file for algos.c - Written by Srihari Nanniyur */
 
 #include "algos.h"
 #include <iostream>
