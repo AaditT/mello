@@ -1,38 +1,49 @@
-#borrowed from https://raspberrypi.stackexchange.com/questions/30170/piezo-with-python?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-r = 1
+import RPi.GPIO as GPIO 
+import time 
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(7, GPIO.OUT) 
+GPIO.setup(15, GPIO.OUT) 
+
+ 
+c_freq = 261
+d_freq = 294
+e_freq = 329 
+f_freq = 349 
+g_freq = 391 
+gSH_freq = 415 
+a_freq = 440 
+aSH_freq = 455 
+b_freq = 466 
+cSH_freq = 554 
+dSH_freq = 622 
+fSH_freq = 740 
+ 
+
+
 p = GPIO.PWM(15, 100)
-def Blink(numTimes, speed):
+
+def Blink(numTimes, speed, note):
     for i in range(0,numTimes): 
         print "Iteration " + str(i+1) 
         GPIO.output(7, True) 
         GPIO.output(15, True) 
         time.sleep(speed) ## Wait
-        p.start(100)             # start the PWM on 100  percent duty cycle  
-        p.ChangeDutyCycle(90)   # change the duty cycle to 90%  
-        p.ChangeFrequency(c)  # change the frequency to 261 Hz (floats also work)  
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(d)  # change the frequency to 294 Hz (floats also work)  
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(e)   
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(f)  
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(g)    
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(a)    
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(b)    
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(C)    
-        time.sleep(speed) ## Wait
-        p.ChangeFrequency(r)  
-        time.sleep(speed) ## Wait
-        p.stop()                # stop the PWM output  
+        p.start(100)              
+        p.ChangeDutyCycle(90)   
+        if (note = "C"): p.ChangeFrequency(c_freq) 
+        if (note = "C#"): p.ChangeFrequency(cSH_freq)  
+        if (note = "D"): p.ChangeFrequency(d_freq)   
+        if (note = "D#"): p.ChangeFrequency(dSH_freq) 
+        if (note = "E"): p.ChangeFrequency(e_freq)   
+        if (note = "F"): p.ChangeFrequency(f_freq) 
+        if (note = "F#"): p.ChangeFrequency(fSH_freq) 
+        if (note = "G"): p.ChangeFrequency(g_freq)    
+        if (note = "G#"): p.ChangeFrequency(gSH_freq) 
+        if (note = "A"): p.ChangeFrequency(a_freq) 
+        if (note = "A#"): p.ChangeFrequency(aSH_freq)    
+        if (note = "B"): p.ChangeFrequency(b_freq)    
+        if (note = "C"): p.ChangeFrequency(c_freq)    
+        p.stop()         
 
-    print "Done" ## When loop is complete, print "Done"
     GPIO.cleanup()
-
-iterations = 4
-speed = 2
-
-Blink(int(iterations),float(speed))
