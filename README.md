@@ -1,8 +1,3 @@
 # mello
 
-To build, type "make" and press Enter.
-
-To denote a major key, just type in the letter; "A" means A major, for example.
-Add a lowercase m, like "Am" for A minor, for a minor key.
-For flatted keys, add a "b". For example, "Abm" is A flat minor.
-Sharp keys use \# signs. "C\#" is C sharp major.
+This repository is currently under construction by the two most genius programmers ever to set foot on a terminal.
