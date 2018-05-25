@@ -44,4 +44,4 @@ def Blink(note):
     if (note == "C"): p.ChangeFrequency(c_freq)    
     p.stop()         
 
-    GPIO.cleanup()
+    GPIO.cleanup() 
