@@ -1,1 +1,32 @@
+https://www.joytunes.com/blog/music-innovation/the-recipe-to-create-emotions-using-music/
 
+
+anger: E major
+	- Tempo (100+ BPM)
+
+contempt: D minor
+	- Tempo (100+ BPM)
+
+disgust: G minor
+	- Tempo (80-100 BPM)
+	- Rhythm (rough)
+
+fear: D# minor
+	- Pitch (low)
+	- Tempo (100+ BPM)
+
+happiness: C major
+	- Tempo (120-160 BPM)
+	- Pitch (relatively high)
+	- Rhythm (smooth, consistent)
+
+neutral: G major
+	- Tempo (80-100 BPM)
+
+sadness: C minor
+	- Pitch (low pitch)
+	- Tempo (60 BPM)
+
+surprise: G sharp
+	- sudden change in dynamics/volume (upward trend)
+		- For example, starting off low pitch/volume but sudden increase
