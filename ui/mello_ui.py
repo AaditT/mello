@@ -3,13 +3,25 @@ from tkinter import *
 ui = tk.Tk()
 ui.title('mello')
 
-canvas = Canvas(ui, width=500,height=200)
+def gen():
+    emotion = entry.get()
+    print("You are feeling "+emotion)
+    print("Generating melody...")
+
+canvas = Canvas(ui, width=500,height=300)
 canvas.pack()
 
+
+
 mello = PhotoImage(file='//home/pi//Downloads//mello.gif')
-enteremotion = PhotoImage(file='//home/pi//Downloads//enteremotion.gif')
-enteremotion.zoom(200,200)
-canvas.create_image(0,0, anchor=NW, image=enteremotion)
-canvas.create_image(150,100,anchor=NW,image=mello)
+canvas.create_image(150,50,anchor=NW,image=mello)
+
+label = Label(ui, text='Enter Emotion:')
+label.pack()
+entry = Entry(ui)
+entry.pack()
+button = Button(ui, text="Generate Melody",command=gen)
+button.pack()
+
 
 ui.mainloop()
