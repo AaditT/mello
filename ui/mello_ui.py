@@ -11,8 +11,6 @@ def gen():
 canvas = Canvas(ui, width=500,height=300)
 canvas.pack()
 
-
-
 mello = PhotoImage(file='//home/pi//Downloads//mello.gif')
 canvas.create_image(150,50,anchor=NW,image=mello)
 
@@ -22,6 +20,5 @@ entry = Entry(ui)
 entry.pack()
 button = Button(ui, text="Generate Melody",command=gen)
 button.pack()
-
 
 ui.mainloop()
