@@ -41,6 +41,29 @@ def sad(num_notes):
                 colors.append("magenta")
         counter = counter + 1
 
+def happy(num_notes):
+    counter = 0
+    colors = ["empty"]
+    while (counter < num_notes):
+        rand_color = random.randint(1, 3)
+        if rand_color == 1: 
+            if colors[counter] == "green": sad(num_notes - counter)
+            else:
+                turnOn(greenPin)
+                colors.append("green")
+        elif rand_color == 2: 
+            if colors[counter] == "red": sad(num_notes - counter)
+            else:
+                turnOn(redPin)
+                colors.append("red")
+        elif rand_color == 3:
+            if colors[counter] == "yellow": sad(num_notes - counter)
+            else:
+                turnOn(greenPin)
+                turnOn(redPin)
+                colors.append("yellow")
+        counter = counter + 1
+
 
 #        time.sleep(0.25)
 #        time.sleep(0.75)
