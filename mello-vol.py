@@ -1,4 +1,4 @@
-# mellogen.py - algorithms for Mello.
+# mello.py - algorithms for Mello.
 # Written by Srihari Nanniyur and Aadit Trivedi
 
 from random import shuffle
