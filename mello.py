@@ -1,6 +1,6 @@
 # mellogen.py - algorithms for Mello.
-# Written by Almighty God, also known as Srihari Nanniyur.
-# Anyone who disapproves of this code is a brain-dead Java programmer.
+# Written by Srihari Nanniyur and Aadit Trivedi
+
 from random import shuffle
 import os
 import RPi.GPIO as GPIO
