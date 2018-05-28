@@ -1,6 +1,10 @@
 from time import sleep
 import RPi.GPIO as GPIO
 
+short_len = 0.25
+medium_len = 0.75
+long_len = 1.5
+
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
