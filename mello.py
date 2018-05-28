@@ -78,6 +78,8 @@ def play_notes(notes, length, c):
     print(cmd)
     os.system(cmd)
 
+def analyze_face():
+    pass
 
 button = False
 
@@ -91,6 +93,7 @@ while True:
             print("Button pressed.")
             time.sleep(2)
             button = True
+            os.system("fswebcam face.jpg")
             play_notes(Generator('A').melody(BLUES, 16), "short", "play")
         else:
             print("Button already pressed.")
