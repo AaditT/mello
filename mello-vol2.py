@@ -150,21 +150,5 @@ def play_notes(notes, length, c):
 
 def analyze_face():
     pass
-
-#button = False
-#
-#GPIO.setmode(GPIO.BCM)
-#GPIO.setup(18, GPIO.IN, pull_up_down = GPIO.PUD_UP)
-#
-#while True:
-#    input_state = GPIO.input(18)
-#    if input_state == False:
-#        if button == False:
-#            print("Button pressed.")
-#            time.sleep(2)
-#            button = True
-            os.system("fswebcam face.jpg")
-            play_notes(Generator('A').melody(BLUES, 16), "short", "play")
-#        else:
-#            print("Button already pressed.")
-#            time.sleep(2)
+os.system("fswebcam face.jpg")
+play_notes(Generator('A').melody(BLUES, 16), "short", "play")
