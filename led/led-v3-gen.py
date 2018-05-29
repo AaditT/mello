@@ -150,18 +150,6 @@ def outColor(theme):
     print(iteration)
 #  printt()
 
-outColor("happy")
-outColor("happy")
-
-outColor("happy")
-outColor("happy")
-outColor("happy")
-outColor("happy")
-
-outColor("happy")
-outColor("happy")
-
-
 
 
 
