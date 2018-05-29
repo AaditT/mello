@@ -144,28 +144,10 @@ def outColor(theme):
   history.append(func_str[colorFunc])
   print(history)
   colorFunc()
-  sleep(0.5)
   global iteration
   iteration = iteration + 1
   print(iteration)
 #  printt()
-
-outColor("angry")
-outColor("angry")
-
-outColor("angry")
-outColor("angry")
-outColor("angry")
-outColor("angry")
-outColor("angry")
-outColor("angry")
-
-
-
-
-
-
-
 
 
   
