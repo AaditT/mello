@@ -1,5 +1,5 @@
 # mello.py - Mello.
-# Written by Srihari Nanniyur and Aadit Trivedi.
+# Written by Srihari Nanniyur.
 # Please do not change this file in Git. Copy it into your system instead.
 
 from random import shuffle
