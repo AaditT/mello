@@ -1,3 +1,5 @@
+# led.py - LED lightshow for Mello.
+# Written by Aadit Trivedi.
 from time import sleep
 import RPi.GPIO as GPIO
 import os, sys
