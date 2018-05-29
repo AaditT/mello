@@ -27,3 +27,7 @@ def ind_blink(pin):
 def red(): ind_blink (11)
 def green(): ind_blink (13)
 def blue(): ind_blink (15)
+
+# red()
+# green()
+# blue()
