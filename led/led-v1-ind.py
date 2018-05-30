@@ -1,3 +1,5 @@
+# Created by Aadit Trivedi
+
 from time import sleep
 import RPi.GPIO as GPIO
 
