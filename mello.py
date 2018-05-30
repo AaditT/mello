@@ -1,5 +1,5 @@
 # mello.py - Mello.
-# Written by Srihari Nanniyur.
+# Written by Srihari Nanniyur and Aadit Trivedi.
 # Please do not change this file in Git. Copy it into your system instead.
 
 from random import shuffle
@@ -155,3 +155,4 @@ def play_notes(notes, length, c):
         cmd = c + ' '
 
 play_notes(Generator(melody_params['key']).melody(melody_params['scale'], 16), melody_params['speed'], "play")
+led.off()
