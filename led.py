@@ -1,9 +1,11 @@
-# led.py - LED lightshow for Mello.
-# Written by Aadit Trivedi.
 from time import sleep
 import RPi.GPIO as GPIO
 import os, sys
 from random import randint
+
+short_len = 0.25
+medium_len = 0.75
+long_len = 1.5
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT)
@@ -45,6 +47,11 @@ def blue(): ind_blink (15)
 def yellow(): mult_blink(11,13)
 def cyan(): mult_blink(13,15)
 def magenta(): mult_blink(11,15)
+
+def off():
+  GPIO.output(11, GPIO.LOW)
+  GPIO.output(13, GPIO.LOW)
+  GPIO.output(15, GPIO.LOW)
 
 colorDict = {
   1:
