@@ -1,3 +1,5 @@
+# Created by Aadit Trivedi
+
 import RPi.GPIO as GPIO
 import time
 
